@@ -4,8 +4,9 @@ import time
 import numpy
 
 class Audio():
-    def __init__(self):
-        pass
+    def __init__(self, filepath=None):
+        if filepath is not None:
+            self.openfile(filepath)
 
     def openfile(self, filepath):
         if ".mp3" in filepath:
